@@ -27,7 +27,6 @@ fs.readFile(urllist, function(err, list) {
 				var columns = JSON.parse(body);
 				var x = columns[0];
 				output.write(response.request.href + "\r\n");
-				console.log(response.request.href + "\r\n");
 				for (var y in x) {output.write(y + ",")}
 					output.write("\r\n" + "\r\n")
 			}
